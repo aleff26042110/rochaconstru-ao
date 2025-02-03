@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocha Casa e Construções</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff; /* Fundo branco */
+            color: #000000; /* Texto preto */
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2E8B57; /* Verde mais suave */
+            color: #ffffff; /* Texto branco */
+            padding: 20px 10px; /* Padding menor para celular */
+            text-align: center;
+            border-bottom: 5px solid #000000; /* Preto */
+        }
+
+        .logo-titulo {
+            display: flex;
+            flex-direction: column; /* Logo e título em coluna */
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-titulo img {
+            width: 100px; /* Tamanho maior da logo */
+            height: 100px; /* Tamanho maior da logo */
+            border-radius: 50%; /* Logo redonda */
+            border: 3px solid #ffffff; /* Borda branca mais espessa */
+        }
+
+        header h1 {
+            font-size: 2rem; /* Tamanho menor para celular */
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1rem; /* Tamanho menor para celular */
+            margin-top: 10px;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #000000; /* Preto */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff; /* Texto branco */
+            text-decoration: none;
+            margin: 0 10px; /* Margem menor para celular */
+            font-size: 1rem; /* Tamanho menor para celular */
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2E8B57; /* Verde ao passar o mouse */
+        }
+
+        /* Conteúdo principal */
+        .container {
+            padding: 15px; /* Padding menor para celular */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .destaque {
+            background-color: #f4f4f4; /* Fundo cinza claro */
+            padding: 15px; /* Padding menor para celular */
+            border-radius: 10px;
+            margin-bottom: 15px; /* Margem menor para celular */
+            text-align: center;
+        }
+
+        .destaque h2 {
+            font-size: 1.5rem; /* Tamanho menor para celular */
+            margin-bottom: 10px; /* Margem menor para celular */
+            color: #2E8B57; /* Verde */
+        }
+
+        .destaque p {
+            font-size: 1rem; /* Tamanho menor para celular */
+            color: #333333; /* Texto escuro */
+        }
+
+        /* Botões de redes sociais e contato */
+        .botoes-contato {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px; /* Margem menor para celular */
+        }
+
+        .botoes-contato a {
+            display: inline-block;
+            padding: 10px 15px; /* Padding menor para celular */
+            font-size: 0.9rem; /* Tamanho menor para celular */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .botoes-contato a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);
+        }
+
+        .btn-facebook {
+            background-color: #1877F2; /* Azul do Facebook */
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366; /* Verde do WhatsApp */
+        }
+
+        .btn-localizacao {
+            background-color: #FF0000; /* Vermelho para localização */
+        }
+
+        /* Carrossel */
+        .carrossel {
+            width: 100%;
+            max-width: 800px;
+            margin: 15px auto; /* Margem menor para celular */
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .carrossel img {
+            width: 100%;
+            display: none;
+            border-radius: 10px;
+        }
+
+        .carrossel img.ativa {
+            display: block;
+            animation: fade 1.5s;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000000; /* Preto */
+            color: #ffffff; /* Texto branco */
+            text-align: center;
+            padding: 15px 0; /* Padding menor para celular */
+            margin-top: 20px; /* Margem menor para celular */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem; /* Tamanho menor para celular */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-titulo">
+            <img src="img/logo.PNG" alt="Logo Rocha Casa e Construções">
+            <h1>Rocha Casa e Construções</h1>
+        </div>
+        <p>Materiais de qualidade para sua obra!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#destaque">Destaques</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <!-- Seção de Destaques -->
+        <section class="destaque" id="destaque">
+            <h2>Ofertas Imperdíveis</h2>
+            <p>Aproveite nossas promoções especiais em materiais de construção.</p>
+        </section>
+
+        <!-- Botões de redes sociais e contato -->
+        <div class="botoes-contato">
+            <a href="https://www.instagram.com/suaconta" class="btn-instagram">Instagram</a>
+            <a href="https://www.facebook.com/suaconta" class="btn-facebook">Facebook</a>
+            <a href="https://wa.me/5512991189175" class="btn-whatsapp">WhatsApp</a>
+            <a href="https://www.google.com/maps?q=Rua+Exemplo+123" class="btn-localizacao">Localização</a>
+        </div>
+
+        <!-- Carrossel de imagens -->
+        <div class="carrossel">
+            <img src="img/carrosel1.PNG" alt="Imagem 1" class="ativa">
+            <img src="img/carrosel2.PNG" alt="Imagem 2">
+            <img src="img/carrosel3.PNG" alt="Imagem 3">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2023 Rocha Casa e Construções. Todos os direitos reservados.</p>
+        <p>Contato: (11) 1234-5678 | contato@rochacasaconstrucoes.com.br</p>
+    </footer>
+
+    <script>
+        // Script para o carrossel automático
+        let index = 0;
+        const imagens = document.querySelectorAll('.carrossel img');
+
+        function trocarImagem() {
+            imagens[index].classList.remove('ativa');
+            index = (index + 1) % imagens.length;
+            imagens[index].classList.add('ativa');
+        }
+
+        setInterval(trocarImagem, 3000); // Troca a imagem a cada 3 segundos
+    </script>
+</body>
+</html>
