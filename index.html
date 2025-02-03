@@ -62,12 +62,20 @@
             transition: transform 0.3s ease;
         }
 
-        .logo-funcionaria img:hover {
-            transform: scale(1.1);
+        .logo-funcionaria img.logo {
+            position: relative;
+            z-index: 2; /* Logo por cima */
         }
 
-        .foto-funcionaria {
-            border-radius: 10px;
+        .logo-funcionaria img.foto-funcionaria {
+            position: relative;
+            left: -50px; /* Ajuste para sobreposição */
+            z-index: 1; /* Funcionária atrás */
+            opacity: 0.8; /* Efeito de transparência */
+        }
+
+        .logo-funcionaria img:hover {
+            transform: scale(1.1);
         }
 
         header h1 {
@@ -225,7 +233,7 @@
     <header>
         <div class="overlay"></div>
         <div class="logo-funcionaria">
-            <img src="img/logo.PNG" alt="Logo Rocha Casa e Construções">
+            <img src="img/logo.PNG" alt="Logo Rocha Casa e Construções" class="logo">
             <img src="img/funcionaria.jpeg" alt="Funcionária Lídia" class="foto-funcionaria">
         </div>
         <h1>Rocha Casa e Construções</h1>
@@ -246,9 +254,9 @@
         <!-- Botões -->
         <div class="botoes-contato">
             <a href="https://www.instagram.com/casadorocha_materiais/" class="btn-instagram">Instagram</a>
-            <a href="https://www.facebook.com/suaconta" class="btn-facebook">Facebook</a>
+            <a href="https://www.facebook.com/rochacasaeconstrucao/?locale=pt_BR" class="btn-facebook">Facebook</a>
             <a href="https://wa.me/5512996146737" class="btn-whatsapp">WhatsApp</a>
-            <a href="https://www.google.com/maps?q=Rua+Exemplo+123" class="btn-localizacao">Localização</a>
+            <a href="https://www.google.com/maps/dir//Rua+Dr.+Jos%C3%A9+Teberga,+670+-+Moreira+C%C3%A9sar,+Pindamonhangaba+-+SP,+12440-060/@-23.0129664,-45.580288,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cce8a795cb8aeb:0x5dc34c236a63a2a0!2m2!1d-45.3656312!2d-22.9126487?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" class="btn-localizacao">Localização</a>
             <a href="https://www.google.com/search?q=rocha+casa+e+constru%C3%A7%C3%A3o+pindamonhangaba+sp&sca_esv=1215752a080e1767&sxsrf=AHTn8zpyQm5r9UGCd4CsZbLpOhpioqH3CQ%3A1738602493380&ei=_fegZ7z1Fo6SwbkP0teD8Qc&oq=rocha&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXJvY2hhKgIIADIEECMYJzIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyDhAuGIAEGMcBGMsBGK8BMg4QLhiABBjHARjLARivAUilOVAAWNwlcAZ4AZABBJgB_wqgAeQ5qgENMi0xLjMuMC4yLjQuMbgBAcgBAPgBAZgCDaACiiCoAg7CAgcQIxgnGOoCwgIKECMY8AUYJxjqAsICExAAGIAEGEMYtAIYigUY6gLYAQHCAhQQABiABBjjBBi0AhjpBBjqAtgBAcICChAjGIAEGCcYigXCAgsQABiABBiRAhiKBcICCxAuGIAEGNEDGMcBwgIFEC4YgATCAgUQABiABMICChAuGIAEGEMYigXCAhAQLhiABBjRAxhDGMcBGIoFmAMW8QUuYQUpLqbH17oGBggBEAEYAZIHCzYuMC4xLjMuNi0zoAfOnQE&sclient=gws-wiz-serp#lrd=0x94cce8a795cb8aeb:0x5dc34c236a63a2a0,3,,,," class="btn-avaliar">Avaliar no Google</a>
         </div>
 
