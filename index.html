@@ -52,11 +52,12 @@
             gap: 15px;
             position: relative;
             z-index: 1;
+            margin-top: 20px; /* Ajuste para descer as imagens */
         }
 
         .logo-funcionaria img {
-            width: 100px;
-            height: 100px;
+            width: 100px; /* Tamanho ajustado para celular */
+            height: 100px; /* Tamanho ajustado para celular */
             border-radius: 50%;
             border: 3px solid #ffffff;
             transition: transform 0.3s ease;
@@ -69,7 +70,7 @@
 
         .logo-funcionaria img.foto-funcionaria {
             position: relative;
-            left: -50px; /* Ajuste para sobreposição */
+            left: -30px; /* Ajuste para sobreposição */
             z-index: 1; /* Funcionária atrás */
             opacity: 0.8; /* Efeito de transparência */
         }
@@ -83,7 +84,7 @@
             font-weight: 600;
             position: relative;
             z-index: 1;
-            margin-top: 10px;
+            margin-top: 20px; /* Ajuste para descer o texto */
             animation: fadeIn 2s ease-in-out;
         }
 
@@ -240,6 +241,30 @@
             font-size: 1rem;
         }
 
+        /* Responsividade para celular */
+        @media (max-width: 600px) {
+            .logo-funcionaria img {
+                width: 80px; /* Tamanho menor para celular */
+                height: 80px; /* Tamanho menor para celular */
+            }
+
+            .logo-funcionaria img.foto-funcionaria {
+                left: -20px; /* Ajuste menor para celular */
+            }
+
+            header h1 {
+                font-size: 1.5rem; /* Tamanho menor para celular */
+            }
+
+            header p {
+                font-size: 1rem; /* Tamanho menor para celular */
+            }
+
+            .descricao-funcionaria {
+                font-size: 0.9rem; /* Tamanho menor para celular */
+                max-width: 250px; /* Largura menor para celular */
+            }
+        }
     </style>
 </head>
 <body>
